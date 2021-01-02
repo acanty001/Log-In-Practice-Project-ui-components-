@@ -20,6 +20,7 @@
 			</div>
 			<div class="login-form">
 				<form name="email-password" method="POST" data-netlify="true">
+					<input type="hidden" name="form-name" value="email-password">
 					<label for="email">Email:</label><br>
 						<input id="email" type="email" name="email" value="" placeholder="Enter your email" required><br>
 					<label for="password" method="POST">Password:</label><br>
@@ -33,7 +34,7 @@
 			</div>
 			<div class="login-btn">
 				<button type="submit" name="submit" value="Log in">Log in</button>
-				<input type="hidden" name="email-password" value="email-password">
+				
 			</div>
 			</form>
 			<div class="no-account">
