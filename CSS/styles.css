@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Roboto,Arial,sans-serif;
+}
+
+.login-container{
+	position: absolute;
+ 	margin: auto;
+  	top: 0;
+ 	right: 0;
+ 	bottom: 0;
+  	left: 0;
+ 	width: 90%;
+ 	height: 70%;
+	outline: solid 10px #EBEFFA;
+	box-shadow: 5px 5px 5px 5px #B6B9C3;
+	display: grid;
+	grid-template-columns: .75fr 1fr;
+}
+
+/*Log in side*/
+.login-side{
+	padding: 100px;
+	overflow: hidden;
+	border-right: solid 2px #EAEFFA;
+}
+
+.or{
+	text-align: center;
+}
+
+.login-google{
+	display: flex;
+	padding: 10px;
+	border: solid 2px #EAEFFA;
+	justify-content: center;
+	margin-bottom: 20px;
+	align-items: center;
+	border-radius: 5px;
+}
+
+.login-google img{
+	margin: 0 20px;
+	color: green;
+	width: 20px;
+	height: 40px;
+}
+
+.login-form input{
+	margin: 7px 0;
+	border: solid 2px #EAEFFA;
+	border-radius: 5px;
+	padding: 10px;
+	width: 100%;
+
+}
+
+.remember-me{
+	display: flex;
+	justify-content: space-between;
+}
+
+.remember-me-checkbox{
+	display: flex;
+	align-items: center;
+}
+
+.remember-me-checkbox p{
+	margin: 0 5px;
+}
+
+.login-btn button{
+	background-color: #0C182F;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	margin: 30px 0;
+	text-align: center;
+	padding: 10px;
+	width: 100%;
+}
+
+.login-btn button:hover{
+	transform: scale(.98);
+	cursor: pointer;
+}
+
+.no-account{
+	margin: 70px 0;
+	text-align: center;
+}
+
+/*Login Content Side*/
+.login-content-side{
+	padding: 100px;
+}
+
+.content{
+	display: flex;
+	line-height: 1.5em;
+}
+
+.content i{
+	color: #026EF2;
+	font-size: 20px;
+	margin: 0px 20px;
+}
+
+.content p{
+	line-height: 1.9em;
+	margin: 20px 0;
+}
+
+@media(max-width: 765px){
+	.login-container{
+		grid-template-columns: 1fr;
+		width: 100%;
+ 		height: 100%;
+ 		outline: none;
+ 		border: none;
+ 		box-shadow: none;
+ 		margin: 20px 0;
+	}
+
+	.login-side{
+		border-right: none;
+		overflow: visible;
+		border-bottom: solid 2px #EAEFFA;
+
+	}
+
+	.login-content-side{
+		
+}
+}
